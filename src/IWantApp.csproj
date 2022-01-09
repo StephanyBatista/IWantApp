@@ -1,23 +1,45 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Dapper" Version="2.0.123" />
-    <PackageReference Include="Flunt" Version="2.0.5" />
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.0">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.0" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
-  </ItemGroup>
+	<ItemGroup>
+		<Using Include="Flunt.Notifications"/>
+		<Using Include="Microsoft.AspNetCore.Identity"/>
+		<Using Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore"/>
+		<Using Include="Microsoft.EntityFrameworkCore"/>
+		<Using Include="Microsoft.AspNetCore.Authorization"/>
+		<Using Include="System.Security.Claims"/>
+		<Using Include="Microsoft.AspNetCore.Mvc"/>
+		<Using Include="Microsoft.IdentityModel.Tokens"/>
+		<Using Include="System.IdentityModel.Tokens.Jwt"/>
+		<Using Include="System.Text"/>
+		<Using Include="Dapper"/>
+		<Using Include="Microsoft.Data.SqlClient"/>
+		<Using Include="Microsoft.AspNetCore.Authentication.JwtBearer"/>
+
+		<Using Include="IWantApp.Domain.Products"/>
+		<Using Include="IWantApp.Infra.Data"/>
+		<Using Include="IWantApp.Endpoints.Employees"/>
+		<Using Include="IWantApp.Endpoints.Categories"/>
+		<Using Include="IWantApp.Endpoints.Security"/>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Dapper" Version="2.0.123" />
+		<PackageReference Include="Flunt" Version="2.0.5" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+	</ItemGroup>
 
 </Project>
